@@ -10,14 +10,8 @@
 	<meta name="description" content="Xylight's portfolio" />
 </svelte:head>
 
-<div class="z-0 space-y-8 flex flex-col justify-center items-center">
-	<header
-		class={[
-			'border-b border-zinc-200 dark:border-zinc-800 overflow-hidden min-h-56 sm:min-h-96 lg:min-h-[36rem]',
-			'py-6 sm:py-16',
-			'relative z-0 w-full flex flex-col justify-end'
-		]}
-	>
+<div class="main">
+	<header class="main-header">
 		<div class="glow"></div>
 		<div class="flex flex-col justify-end h-full space-y-2 text-xl gap-4 max-w-7xl w-full mx-auto">
 			<nav class={['flex items-center flex-wrap justify-start px-5 sm:px-16']}>
@@ -25,7 +19,7 @@
 					<a
 						{href}
 						class={[
-							'font-display font-medium text-base hover:underline',
+							'font-medium text-base hover:underline',
 							'px-3 lg:px-4 py-2 transition-colors inline-flex flex-row items-center gap-2'
 						]}
 					>
@@ -39,7 +33,7 @@
 			</nav>
 			<h1
 				class={[
-					'tracking-tighter text-6xl sm:text-7xl lg:text-9xl font-display px-5 sm:px-16 w-max flex gap-4 '
+					'tracking-tighter text-7xl sm:text-8xl lg:text-9xl font-display px-8 sm:px-16 w-max flex gap-4 '
 				]}
 			>
 				<span
@@ -58,8 +52,7 @@
 	{/snippet}
 
 	<Section>
-		<heading class="space-y-4">
-			<h2 id="about" class="font-display text-3xl font-medium tracking-tight">About me</h2>
+		<heading>
 			<div
 				class="text-2xl sm:text-2xl text-zinc-500 dark:text-zinc-400 max-w-3xl leading-[1.5] space-y-6 text-left font-medium tracking-tight"
 			>
@@ -83,8 +76,13 @@
 		</heading>
 	</Section>
 	<Section>
-		<h2 id="projects" class="font-display text-5xl sm:text-6xl tracking-tight">Projects</h2>
-		<div class="flex flex-row flex-wrap gap-x-8 gap-y-16 w-full text-left">
+		<h2
+			id="projects"
+			class="font-display mb-12 italic text-5xl sm:text-6xl tracking-tight text-center"
+		>
+			Projects
+		</h2>
+		<div class="flex flex-row flex-wrap sm:px-16 gap-x-8 gap-y-16 w-full text-left">
 			{#snippet project(
 				number: number,
 				name: string,
@@ -159,7 +157,7 @@
 				placeholder
 			)}
 		</div>
-		<p class="tracking-tight text-xl text-zinc-600 dark:text-zinc-400 max-w-xl px-8">
+		<p class="tracking-tight text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl px-8 sm:px-24">
 			If you'd like to support my work, especially on Photon, you can donate at {@render social(
 				'https://buymeacoffee.com/xylight',
 				'Buy me a Coffee'
@@ -170,6 +168,45 @@
 
 <style>
 	@reference '../app.css';
+
+	.main {
+		z-index: 0;
+		gap: calc(var(--spacing) * 8);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main-header {
+		border-bottom: 1px solid var(--color-zinc-200);
+		overflow: hidden;
+		min-height: calc(var(--spacing) * 56);
+
+		padding-top: calc(var(--spacing) * 6);
+		padding-bottom: calc(var(--spacing) * 6);
+
+		position: relative;
+		z-index: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+
+		@variant sm {
+			min-height: calc(var(--spacing) * 96);
+			padding-top: calc(var(--spacing) * 16);
+			padding-bottom: calc(var(--spacing) * 16);
+		}
+
+		@variant lg {
+			min-height: 36rem;
+		}
+
+		@variant dark {
+			border-color: var(--color-zinc-800);
+		}
+	}
 
 	@keyframes brighten {
 		from {
@@ -189,7 +226,7 @@
 		animation: brighten ease-out 1s forwards;
 
 		position: absolute;
-		width: 100%;
+		width: 150%;
 		top: 0;
 		height: 48rem;
 		max-width: 100%;
@@ -203,11 +240,12 @@
 			transparent
 		);
 		background-position: 50% 0%;
-		background-size: 30rem 15rem;
+		background-size: 50rem 30rem;
 		background-repeat: no-repeat;
 		pointer-events: none;
 
 		@variant sm {
+			width: 100%;
 			background-size: 50rem 30rem;
 		}
 		@variant lg {

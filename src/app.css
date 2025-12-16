@@ -34,12 +34,12 @@
 	font-display: swap;
 }
 
-/* @font-face {
+@font-face {
 	font-family: 'Baskervville';
 	src: url('/font/baskervville-italic.woff2') format('woff2');
 	font-display: swap;
 	font-style: italic;
-} */
+}
 
 html,
 body {
