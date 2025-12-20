@@ -1,7 +1,7 @@
 ---
 title: '"Bot stoppers" absolutely despise me'
 description: Recaptcha, hCaptcha, Turnstile, Anubis, etc all think I'm a bot.
-date: 2025-8-16
+date: 2025-08-16
 link: /posts/bot-stoppers-hate-me
 keywords: server, hosting, story, CAPTCHA
 ---
@@ -49,7 +49,7 @@ But I get blocked by these frequently. This challenge will stop you if:
 - Your connection isn't fast enough.
   - The test can timeout before it reloads which will restart the test and, unless your connection improves, make it impossible to pass.
 
-Cloudflare also provides the **Turnstile** service which is similar to a reCAPTCHA--you click a button and pray that the gods of the internet that your IP address is "normal". Same blocks as above.
+Cloudflare also provides the **Turnstile** service which is similar to a reCAPTCHA--you click a button and pray to the gods of the internet that your IP address is "normal". Same blocks as above.
 
 ## hCaptcha
 
@@ -59,7 +59,7 @@ These are my _least favorite_ CAPTCHA. These are the ones with the strange tests
 
 Even worse
 
-The tests themselves aren't bad, at least for me. Look at what heppened to this poor guy:
+The tests themselves aren't bad, at least for me. Look at what happened to this poor guy:
 
 <Img src="./discord-hcaptcha.webp" alt="A Reddit post, titled 'I genuinely can't do this captcha'. Attached is an image of an hCAPTCHA prompt, with instruction that reads: 'Please click on ALL objects similar to the given picture.' There are 3 trees at the top, and a collection of photos of forest animals including butterflies, squirrels, koalas, and birds." />
 

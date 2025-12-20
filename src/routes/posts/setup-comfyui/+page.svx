@@ -20,13 +20,13 @@ ComfyUI is the standard for running diffusion models on your own hardware, akin 
 
 It uses a node-based workflow system to load models, images, encode prompts, manipulate outputs, etc.
 
-It supports both ROCm for AMD GPUs and CUDA for Nvidia GPUs, and CPU offloading.
+It supports both ROCm for AMD GPUs and CUDA for NVIDIA GPUs, and CPU offloading.
 
-This guide will show you how to setup and run the new [Z Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) model.
+This guide will show you how to set up and run the new [Z Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) model.
 
 ## Download
 
-You'll need to first install **Git**, **Python**, and **your GPU's compute library** (ROCm/HIP for AMD, CUDA for Nvidia).
+You'll need to first install **Git**, **Python**, and **your GPU's compute library** (ROCm/HIP for AMD, CUDA for NVIDIA).
 
 First, clone the ComfyUI repository.
 
@@ -35,7 +35,7 @@ git clone https://github.com/comfyanonymous/ComfyUI.git
 cd ComfyUI
 ```
 
-Then, we'll setup a `venv` so that we can install dependencies in a clean way. If you know how to, you can use another venv manager if you'd like.
+Then, we'll set up a `venv` so that we can install dependencies in a clean way. If you know how to, you can use another venv manager if you'd like.
 
 ```bash
 python -m venv venv
@@ -50,7 +50,7 @@ Now, we must install the python dependencies for your GPU.
 pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4
 ```
 
-### Nvidia (CUDA)
+### NVIDIA (CUDA)
 
 ```bash
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
@@ -93,7 +93,7 @@ You can now open ComfyUI by going to [http://localhost:8188](http://localhost:81
 
 Clicking _"Run"_ will not do anything, since we don't have any models installed. Let's try [Z Image Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)!
 
-I'm actually not going to download straight from there. I'd recommend downloading a quantized version, as it has a miniscule impact on quality while greatly improving memory efficiency and speed.
+I'm actually not going to download straight from there. I'd recommend downloading a quantized version, as it has a minuscule impact on quality while greatly improving memory efficiency and speed.
 
 ### Diffusion model
 

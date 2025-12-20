@@ -1,8 +1,8 @@
 ---
 title: Everything Wrong with Material 3 Expressive
 description: It's like if you took Material 3 and made it less expressive.
-date: 2025-9-9
-updated: 2025-9-17
+date: 2025-09-09
+updated: 2025-09-17
 link: /posts/everything-wrong-with-m3e
 keywords: android, design, google
 ---
@@ -73,7 +73,7 @@ You don't even need to pixel peep to see the amount of inconsistency! That's a l
 
 Additionally, none of the new "expressive" components are used in either.
 
-The animation between the phone app now has a laterial transition, [discouraged by Google's own guidelines.](https://m3.material.io/styles/motion/transitions/applying-transitions#98deff91-7469-4647-abdc-2f6562b98d93)
+The animation between the phone app now has a lateral transition, [discouraged by Google's own guidelines.](https://m3.material.io/styles/motion/transitions/applying-transitions#98deff91-7469-4647-abdc-2f6562b98d93)
 
 ### Calculator
 
@@ -83,7 +83,7 @@ The calculator got absolutely butchered in its update. In its glory days, before
   <enhanced:img loading="lazy" src="./calculator-old.webp" />
 </Img>
 
-I honestly considered this great use of the Material 3 design system beforehand. It used the lot of the available color palette, the buttons were padded and separated nicely, the number entry field was distinguished well, and there were nice subtle animations.
+I honestly considered this great use of the Material 3 design system beforehand. It used a lot of the available color palette, the buttons were padded and separated nicely, the number entry field was distinguished well, and there were nice subtle animations.
 
 Here is it now, with the ultra mega super expressive expressed feeling emotional new UX:
 

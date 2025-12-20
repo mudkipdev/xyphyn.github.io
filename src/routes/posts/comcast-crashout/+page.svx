@@ -1,7 +1,7 @@
 ---
 title: Xfinity's Port Forwarding
 description: I have never before seen a more infuriating network management experience.
-date: 2025-8-15
+date: 2025-08-15
 link: /posts/comcast-crashout
 keywords: network, router, internet, port forward
 ---
@@ -22,9 +22,9 @@ My most recent Comcast crashout™️ was how their router does port forwarding.
 
 But their port forwarding was _the worst_.
 
-I, as an advanced user, go to the admin panel. **everybody** who knows what on earth port forwarding is, and why they'd want to do it would use _this_ admin panel.
+I, as an advanced user, go to the admin panel. **Everybody** who knows what on earth port forwarding is, and why they'd want to do it would use _this_ admin panel.
 
-I go to the _"advanced"_ section. I then wait 5 seconds for their god awful panel to load. I click _"port forwarding"_. while I wait, I reflect on the fact that this panel **has a 6mb JavaScript bundle for absolutely no reason**. And then, the page loads.
+I go to the _"advanced"_ section. I then wait 5 seconds for their god awful panel to load. I click _"port forwarding"_. While I wait, I reflect on the fact that this panel **has a 6mb JavaScript bundle for absolutely no reason**. And then, the page loads.
 
 ## the message
 
@@ -32,7 +32,7 @@ I go to the _"advanced"_ section. I then wait 5 seconds for their god awful pane
 
 I DONT WANT EASIER THAN EVER!!!! I AM PORT FORWARDING. I AM NOT A 79 YEAR OLD GRANDPA WHO DESPERATELY NEEDS AN APP TO HELP RESTART THE WIFI.
 
-Whatever. I go to the page, log in to the _mandatory_ account that I shouldn't need, _(because a router should be independent of external identification services)_. After I log in and download the 8 gigabyte JavaScript bundle, a new page appears.
+Whatever. I go to the page, log in to the _mandatory_ account that I shouldn't need, _(because a router should be independent of external identification services)_. After I log in and download the 8-gigabyte JavaScript bundle, a new page appears.
 
 ## the message (this time it's different I swear)
 
@@ -48,7 +48,7 @@ I finally find the port forwarding page. I click _"Add a port forward"_.
 
 ## the port forward
 
-Instead of forwarding to an IP address, you have to select from a list of **NAMED** devices. My router won't detecting the hostname of my home server, and the router won't let me give it a new IP address.
+Instead of forwarding to an IP address, you have to select from a list of **NAMED** devices. My router won't detect the hostname of my home server, and the router won't let me give it a new IP address.
 
 I desperately try and fix that, but it turns out the list updates on a fixed timer of **2 minutes**, and then it suddenly appears.
 

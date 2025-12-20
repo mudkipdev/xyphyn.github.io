@@ -1,14 +1,14 @@
 ---
 title: How to Use the Fediverse
 description: This is a dead simple guide to switch (or at least try) platforms like Mastodon or Lemmy
-date: 2025-9-6
+date: 2025-09-06
 link: /posts/switch-to-fediverse
 keywords: guide, fediverse, lemmy, mastodon
 ---
 
 ## Quick brief
 
-Really quick definition before everything else--when I refer to a "server" (often called instance), I'm referring to an individual website/server running the relavant software. Think email: there's a bunch of individual email "servers" run by certain people, but they can all interact. (john@gmail.com can send emails to bob@outlook.com)
+Really quick definition before everything else--when I refer to a "server" (often called instance), I'm referring to an individual website/server running the relevant software. Think email: there's a bunch of individual email "servers" run by certain people, but they can all interact. (john@gmail.com can send emails to bob@outlook.com)
 
 # How to join...
 
@@ -27,7 +27,7 @@ If you want to learn more, keep reading.
 
 ## What is this?
 
-The _"fediverse"_ is decentralized a network of servers, typically social media servers, that can all interact and view content from each other.
+The _"fediverse"_ is a decentralized network of servers, typically social media servers, that can all interact and view content from each other.
 
 It is similar to how email works. Even though they are on completely separate servers, john@gmail.com can send and view emails to and from bob@outlook.com.
 

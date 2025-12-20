@@ -16,7 +16,7 @@ _This guide is oversimplified, and meant to give you a starting point._
 
 For simplicity, I will describe how to build llama.cpp from source for your system. Your distro may provide some prebuilt package for your hardware, but it may not be optimized for your system.
 
-To get started, first clone the repository from (GitHub)[https://github.com/ggml-org/llama.cpp].
+To get started, first clone the repository from [GitHub](https://github.com/ggml-org/llama.cpp).
 
 ```bash
 git clone https://github.com/ggml-org/llama.cpp.git
@@ -115,7 +115,7 @@ On the right, you'll see various **_quantizations_**. In general, you'll want to
 
 ## Running a model
 
-Let's run a GGUF we found on HuggingFace, in this case, [Qwen3 4B](https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF).
+Let's run a GGUF we found on Hugging Face, in this case, [Qwen3 4B](https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF).
 
 Here's how to run it:
 
@@ -129,7 +129,7 @@ llama-server -hf unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M --port 10000 -ngl 99
 >
 > Otherwise, you may get "Invalid device function" errors or other crashes.
 >
-> To do this, prepend `HSA_OVERRIDE_GFX_VERSION=\[gfx version\] before these commands.
+> To do this, prepend `HSA_OVERRIDE_GFX_VERSION=\[gfx version\]` before these commands.
 
 `-ngl [x]` is the **_number of model layers_** to offload to your GPU. **You generally want this as high as you can go**, because any non-offloaded layers will be run on the slower CPU. If you're getting `device out of memory` errors, decrease this value.
 
